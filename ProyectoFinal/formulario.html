@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Enfermedades Respiratorias</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+
+    <header>
+        <a href="inicio.html" class="btn-regresar">Regresar</a>
+        <h2 class="logo">Diagnóstico de Enfermedades Respiratorias</h2>
+    </header>
+    
+    <div class="wrapper">
+        <div class="form-box">
+            <h2>Preguntas para el diagnóstico</h2>
+            
+            <div id="formulario">
+                <div class="sintoma">
+                    <label>¿Cómo describirías tu tos?:</label>
+                    <select class="sintoma-input" data-sintoma="Tos">
+                        <option value="0">No tengo tos</option>
+                        <option value="0.3">Tos leve de vez en cuando</option>
+                        <option value="0.6">Toso seguido, es una tos constante</option>
+                        <option value="1">Toso muy fuerte y casi todo el tiempo</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Tienes fiebre?:</label>
+                    <select class="sintoma-input" data-sintoma="Fiebre">
+                        <option value="0">No tengo</option>
+                        <option value="0.2">Siento un poco de calentura, pero no mucha (menos de 37.5°C)</option>
+                        <option value="0.5">Tengo fiebre, me siento caliente (menos de 38.5°C)</option>
+                        <option value="1">La fiebre está muy alta, me siento muy mal (más de 39°C)</option>
+                    </select>
+                </div>
+                
+                <div class="sintoma">
+                    <label>¿Se te dificulta respirar?:</label>
+                    <select class="sintoma-input" data-sintoma="Disnea">
+                        <option value="0">No, respiro normal</option>
+                        <option value="0.3">Un poco al hacer algo de esfuerzo</option>
+                        <option value="0.6">Me cuesta respirar incluso estando quieto</option>
+                        <option value="1">Respirar es muy difícil, me falta mucho el aire</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Sientes congestión nasal?:</label>
+                    <select class="sintoma-input" data-sintoma="Congestión nasal">
+                        <option value="0">No, no siento congestión</option>
+                        <option value="0.3">Me siento levemente congestionado(a)</option>
+                        <option value="0.6">Tengo la nariz bastante congestionada</option>
+                        <option value="1">Tengo la nariz completamente tapada, casi no puedo respirar</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Te duele la garganta?:</label>
+                    <select class="sintoma-input" data-sintoma="Dolor de garganta">
+                        <option value="0">No, nada de dolor</option>
+                        <option value="0.2">Siento una pequeña molestia o irritación</option>
+                        <option value="0.5">Me duele la garganta pero es un dolor moderado</option>
+                        <option value="1">Me duele mucho la garganta, es un dolor fuerte</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Qué tan seguido estas estornudando?:</label>
+                    <select class="sintoma-input" data-sintoma="Estornudos">
+                        <option value="0">No tengo estornudos</option>
+                        <option value="0.3">Estornudo de vez en cuando</option>
+                        <option value="0.6">Estornudo con frecuencia.</option>
+                        <option value="1">Estoy estornudando todo el tiempo</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Qué tan cansado(a) te sientes?:</label>
+                    <select class="sintoma-input" data-sintoma="Fatiga">
+                        <option value="0">Me siento bien, nada de cansancio</option>
+                        <option value="0.3">Estoy un poco cansado(a) o agotado(a)</option>
+                        <option value="0.7">Tengo un cansancio que me impide hacer cosas.</option>
+                        <option value="1">Estoy completamente agotado(a)</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Tienes dolor en el pecho?:</label>
+                    <select class="sintoma-input" data-sintoma="Dolor en el pecho">
+                        <option value="0">No, nada de dolor en el pecho</option>
+                        <option value="0.4">De vez en cuando siento una molestia en el pecho</option>
+                        <option value="0.7">Me duele el pecho cuando respiro</option>
+                        <option value="1">Tengo un dolor muy intenso y no se quita</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Escuchas silbidos al respirar?:</label>
+                    <select class="sintoma-input" data-sintoma="Sibilancias">
+                        <option value="0">No, mi respiración es normal</option>
+                        <option value="0.3">Ocasionalmente escucho un silbido al respirar.</option>
+                        <option value="0.7">Me silba el pecho cuando me esfuerzo un poco.</option>
+                        <option value="1">Mi respiración hace un silbido constante</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Sientes escalofríos?:</label>
+                    <select class="sintoma-input" data-sintoma="Escalofríos">
+                        <option value="0">No, no tengo escalofríos</label>
+                        <option value="0.4">Siento escalofríos leves de vez en cuando</option>
+                        <option value="0.8">Tengo escalofríos que me dan con cierta frecuencia</option>
+                        <option value="1">Tengo temblores y escalofríos muy intensos</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Cómo describirías la mucosidad (flemas/moco)?:</label>
+                    <select class="sintoma-input" data-sintoma="Mucosidad">
+                        <option value="0">Mi mucosidad es normal</option>
+                        <option value="0.3">Tengo un poco más de moco/flemas de lo usuale</option>
+                        <option value="0.7">Tengo mucha mucosidad y es constante</option>
+                        <option value="1">La mucosidad es excesiva y muy espesa</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Hueles las cosas con normalidad?:</label>
+                    <select class="sintoma-input" data-sintoma="Pérdida olfato">
+                        <option value="0">Sí, huelo bien</option>
+                        <option value="0.5">Huelo las cosas menos que antes</option>
+                        <option value="1">No huelo absolutamente nada</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Sientes el sabor de las comidas?:</label>
+                    <select class="sintoma-input" data-sintoma="Pérdida gusto">
+                        <option value="0">Sí, los sabores son normales</option>
+                        <option value="0.5">Los sabores me saben raro o diferente</option>
+                        <option value="1">No le encuentro ningún sabor a la comida</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Sientes algún dolor en tus músculos?:</label>
+                    <select class="sintoma-input" data-sintoma="Dolores musculares">
+                        <option value="0">No tengo dolores</option>
+                        <option value="0.3">Tengo dolores leves en el cuerpo</option>
+                        <option value="0.7">Me duelen los músculos bastante</option>
+                        <option value="1">Tengo dolores musculares muy fuertes</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Tu voz está ronca?:</label>
+                    <select class="sintoma-input" data-sintoma="Ronquera">
+                        <option value="0">Mi voz está normal</option>
+                        <option value="0.4">Tengo la garganta irritada y la voz un poco ronca</option>
+                        <option value="0.8">Se me nota la ronquera</option>
+                        <option value="1">No puedo hablar, me quedé sin voz</option>
+                    </select>
+                </div>
+
+                <div class="sintoma">
+                    <label>¿Notas algo diferente en cómo respiras?:</label>
+                    <select class="sintoma-input" data-sintoma="Respiración rápida">
+                        <option value="0">Respiro con normalidad</option>
+                        <option value="0.3">Respiro un poco más rápido de lo usual</option>
+                        <option value="0.7">Siento que respiro con dificultad y rapidez</option>
+                        <option value="1">Me cuesta mucho respirar, como si no entrara aire</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn" onclick="calcularDiagnostico()">Realizar Diagnóstico</button>
+
+            <div id="resultados"></div>
+
+            <div class="form-box" id="diagnostico-especifico">
+                <h2>Diagnóstico Específico</h2>
+                
+                <div class="seleccion-enfermedades">
+                    <div class="input-box">
+                        <label>Seleccione las enfermedades que crees tener para tener un diagnostico más específico (mínimo 2):</label>
+                        <div id="lista-enfermedades">
+                            <label><input type="checkbox" value="Gripe"> Gripe</label>
+                            <label><input type="checkbox" value="Neumonía"> Neumonía</label>
+                            <label><input type="checkbox" value="Asma"> Asma</label>
+                            <label><input type="checkbox" value="Bronquitis"> Bronquitis</label>
+                            <label><input type="checkbox" value="COVID-19"> COVID-19</label>
+                            <label><input type="checkbox" value="Enfisema"> Enfisema</label>
+                            <label><input type="checkbox" value="Tuberculosis"> Tuberculosis</label>
+                            <label><input type="checkbox" value="EPOC"> EPOC</label>
+                            <label><input type="checkbox" value="Rinitis alérgica"> Rinitis alérgica</label>
+                            <label><input type="checkbox" value="Sinusitis"> Sinusitis</label>
+                            <label><input type="checkbox" value="Faringitis"> Faringitis</label>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="calcularDiagnosticoEspecifico()">Evaluar Enfermedades Seleccionadas</button>
+                </div>
+
+                <div id="resultados-especificos"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
